@@ -5,6 +5,7 @@ from .models import Post
 from marketing.models import Signup
 from .forms import CommentForm
 
+
 def search(request):
     queryset = Post.objects.all()
     query = request.GET.get('q')

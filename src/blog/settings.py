@@ -32,7 +32,10 @@ INSTALLED_APPS = [
 
     # 3rd Party Apps
     'tinymce',
+    'crispy_forms',
 ]
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -127,7 +130,6 @@ TINYMCE_DEFAULT_CONFIG = {
     'custom_undo_redo_levels': 30,
     'selector': 'textarea',
     'theme': 'modern',
-    'width': '70%',
     'plugins': '''
             textcolor save link image media preview codesample contextmenu
             table code lists fullscreen  insertdatetime  nonbreaking
@@ -149,3 +151,7 @@ TINYMCE_DEFAULT_CONFIG = {
     'menubar': True,
     'statusbar': True,
 }
+
+MAILCHIMP_API_KEY= '60d0fc72ea0a049bb2badf3c935507e2-us4'
+MAILCHIMP_DATA_CENTER = 'us4'
+MAILCHIMP_EMAIL_LIST_ID= '9274f328a2'

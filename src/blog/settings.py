@@ -25,6 +25,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # All Auth
+    'django.contrib.sites',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
 
     # Main Apps
     'posts',
@@ -155,3 +160,13 @@ TINYMCE_DEFAULT_CONFIG = {
 MAILCHIMP_API_KEY= '60d0fc72ea0a049bb2badf3c935507e2-us4'
 MAILCHIMP_DATA_CENTER = 'us4'
 MAILCHIMP_EMAIL_LIST_ID= '9274f328a2'
+
+
+# Django All Auth
+
+AUTHENTICATION_BACKENDS = (
+    'django.contrib.auth.backends.ModelBackend',
+    'allauth.account.auth_backends.AuthenticationBackend'
+)
+
+SITE_ID=1

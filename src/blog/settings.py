@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     # 3rd Party Apps
     'tinymce',
     'crispy_forms',
+    'import_export',
 ]
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
@@ -157,7 +158,7 @@ TINYMCE_DEFAULT_CONFIG = {
     'statusbar': True,
 }
 
-MAILCHIMP_API_KEY= 'apikey'
+MAILCHIMP_API_KEY= '60d0fc72ea0a049bb2badf3c935507e2-us4'
 MAILCHIMP_DATA_CENTER = 'us4'
 MAILCHIMP_EMAIL_LIST_ID= '9274f328a2'
 

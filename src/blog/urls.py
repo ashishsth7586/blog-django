@@ -4,6 +4,8 @@ from django.contrib import admin
 from django.urls import path, include
 from posts.views import index, blog, post, search, post_create, post_update, post_delete
 from marketing.views import email_list_signup
+from weather.views import weather
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -17,6 +19,7 @@ urlpatterns = [
     path('post/<id>/delete/', post_delete, name="post-delete"),
     path('tinymce/', include('tinymce.urls')),
     path('accounts/', include('allauth.urls')),
+    path('weather/', weather, name="weather"),
 
 ]
 
